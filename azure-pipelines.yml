@@ -20,13 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: PublishCucumberReport@1
-  inputs:
-    jsonDir: 'json:target/cucumber-report'
-    outputPath: 'html:target/cucumber-report'
-    theme: 'bootstrap'
-    reportSuiteAsScenarios: true
-   
+
 - task: PublishPipelineMetadata@0
 
 - task: CopyFiles@2
@@ -46,7 +40,7 @@ steps:
 
 - task: PublishCucumberReport@1
   inputs:
-    jsonDir: '$(System.DefaultWorkingDirectory)'
-    outputPath: '$(Sytem.DefaultWorkingDirectory)'
+    jsonDir: 'target/cucumber-report'
+    outputPath: 'target/cucumber-report'
     theme: 'bootstrap'
     reportSuiteAsScenarios: true
