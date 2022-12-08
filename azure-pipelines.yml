@@ -44,3 +44,4 @@ steps:
     outputPath: 'target/cucumber-report'
     theme: 'bootstrap'
     reportSuiteAsScenarios: true
+    name: 'Cucumber report'
