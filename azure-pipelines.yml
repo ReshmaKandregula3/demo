@@ -40,8 +40,8 @@ steps:
 
 - task: PublishCucumberReport@1
   inputs:
-    jsonDir: 'target/cucumber-report'
-    outputPath: 'target/cucumber-report'
+    jsonDir: 'target/cucumber-reports'
+    outputPath: 'target/cucumber-reports'
     theme: 'bootstrap'
     reportSuiteAsScenarios: true
-    name: 'Cucumber report'
+    name: 'Cucumber reports'
